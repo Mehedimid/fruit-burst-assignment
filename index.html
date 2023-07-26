@@ -33,39 +33,19 @@
   </head>
   <!-- bodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybodybody -->
   <body class="lato-font">
-    <header class="mb-6">
+    <header>
+      
       <nav>
-        <div
-          class="max-w-6xl mx-auto rounded-full px-10 my-11 py-4 md:text-white md:bg-[#F85559]">
-          <div
-            class="flex flex-row-reverse md:flex-row justify-between justify-center items-center">
-            <div class="">
-              <div class="dropdown md:hidden">
+
+        <div class="navbar mx-7 md:max-w-6xl mx-auto rounded-full md:px-10 my-11 py-4 md:text-white md:bg-[#F85559]">
+          <div class="navbar-start  ">
+
+            <div class="navbar-start md:hidden">
+              <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h7" />
-                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm text-black dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
-              <div class="">
-                <ul class="hidden md:grid grid-cols-2 lg:flex lg:gap-5">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
@@ -73,30 +53,112 @@
                 </ul>
               </div>
             </div>
-            <div class="">
-              <div class="flex flex-1 justify-center items-center gap-4">
-                <img src="./images/logo.png" alt="" />
-                <h3 class="text-4xl font-bold">Fruit Burst</h3>
-              </div>
+
+            <ul class="menu menu-horizontal hidden md:flex ">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="navbar-center">
+            <div class="flex flex-1 justify-center items-center gap-4">
+              <img src="./images/logo.png" alt="" />
+              <h3 class="text-4xl font-bold">Fruit Burst</h3>
             </div>
-            <div class="hidden md:block">
-              <div class="form-control">
-                <form class="flex items-center relative">
-                  <input
-                    class="px-3 ml-10 rounded-full py-2"
-                    type="text"
-                    placeholder=" Search here "
-                    style="font-family: lato, FontAwesome" />
-                  <i
-                    class="fa-solid fa-magnifying-glass text-lg absolute left-52"
-                    style="color: #000000"></i>
-                </form>
-              </div>
+          </div>
+
+          
+
+          <div class="navbar-end hidden lg:block">
+            <div class="form-control flex items-center relative ">
+              <input type="text" placeholder="Search here" size="32" class="ml-24 rounded-full input input-bordered w-24 md:w-auto" />
+            <span>   <i 
+              class="fa-solid fa-magnifying-glass text-lg absolute top-2 right-3"
+              style="color: #000000"></i></span>
             </div>
           </div>
         </div>
       </nav>
+
     </header>
-    <!-- header section ends  -->
+   
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nav>
+  <div
+    class="max-w-6xl mx-auto rounded-full px-10 my-11 py-4 md:text-white md:bg-[#F85559]">
+    <div
+      class="flex flex-row-reverse md:flex-row justify-between justify-center items-center">
+      <div class="">
+        <div class="dropdown md:hidden">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm text-black dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="hidden md:grid grid-cols-2 lg:flex lg:gap-5">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="">
+        <div class="flex flex-1 justify-center items-center gap-4">
+          <img src="./images/logo.png" alt="" />
+          <h3 class="text-4xl font-bold">Fruit Burst</h3>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div class="form-control">
+          <form class="flex items-center relative">
+            <input
+              class="px-3 ml-10 rounded-full py-2"
+              type="text"
+              placeholder=" Search here "
+              style="font-family: lato, FontAwesome" />
+            <i
+              class="fa-solid fa-magnifying-glass text-lg absolute left-52"
+              style="color: #000000"></i>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
